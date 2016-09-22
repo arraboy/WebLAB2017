@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*AZZERAMENTI GENERALI*/
+body, div, ul, li, a, img, h1, h2, h3, h4, h5, h6, p {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	font-family: 'Titillium Web', sans-serif;
+	color:#000;
+	list-style:none;
+	text-decoration:none;
+	font-weight:normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+	font-size:16px;
+	line-height:22px;
+}
+img {
+	display:block;
+}
+span.italic {
+	font-weight:normal;
+	font-style:italic;
+}
+p a:hover {
+	color:#F00;
+}
+body {
+	margin:0;
+	padding:0;
+	text-align:center;
+	background-color:#FFF;
+	height:100%;
+}
+/*FINE AZZERAMENTI GENERALI*/
+
+/*HEADER*/
+div#header {
+	background:#FFF;
+	position:fixed;
+	top: 0;
+	text-align:center;
+	width:100%;
+	z-index:99999;
+	background-color:#FFF;
+}
+nav.single-page-nav {
+	/*min-width:620px;
+	max-width:860px;*/
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	padding:20px 10px 0;
+}
+nav.single-page-nav ul.logo-home {
+	margin:0 auto 20px;
+}
+nav.single-page-nav ul.menu {
+	/*width:100%;
+	max-width:745px;*/
+	display:table;
+	width:100%;
+	padding-bottom:18px;
+}
+nav.single-page-nav ul.menu li {
+	float:left;
+	margin:0 20px 0 0;
+}
+nav.en ul.menu li {
+	float:left;
+	margin:0 27px 0 0;
+}
+nav.single-page-nav ul.menu li.last {
+	margin:0;
+}
+nav.single-page-nav a {
+	font-size:16px;
+}
+nav.single-page-nav a:hover, 
+nav.single-page-nav a.current {
+	/*border-bottom:2px #000 solid;*/
+	color:#F00;
+}
+nav.single-page-nav ul.logo-home a:hover, 
+nav.single-page-nav ul.logo-home a.current  {
+	border:0;
+}
+/*FINE HEADER*/
+
+
+/*CONTENUTO GENERALE*/
+div#one-page {
+	text-align:center;
+	width:100%;
+	background-color:#FFFF99;
+}
+div.section {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	padding:220px 10px 0;
+	display:table;
+}
+div.inner-section {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	padding:0 0 120px;
+	display:table;
+}
+div.last {
+	padding-bottom:0;
+}
+div.left {
+	width:350px;
+	margin:0 50px 0 0;
+	float:left;
+}
+div.left h2 span.titolo-sezione,
+div.left h1 span.titolo-sezione {
+	font-size:20px;
+	font-weight:bold;
+	color:#F00;
+}
+div.right {
+	width:400px;
+	margin-top:-10px;
+	padding:0;
+	float:left;
+}
+/*FINE CONTENUTO GENERALE*/
+
+
+/*HOME*/
+#home {
+	width: 100%;
+	padding:0 0 0 0;
+    position: relative;
+    text-align: center;
+	height: 100%;
+    background-image:url(../images/backgrounds/pattern-02-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.image-over {
+    background-image:url(../images/backgrounds/pattern-01-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax-content {
+	width:800px;
+	padding:220px 0 0;
+	margin:0 auto;
+	text-align:left;
+	display:table;
+}
+div#home h1,
+div#home p {
+	background-color:#FFF;
+	padding:10px;
+	margin:-10px 0 0 -10px;
+}
+/*FINE HOME*/
+
+/*1*/
+div#uno div.left {
+	width:100%;
+}
+/*FINE 1*/
+
+
+/*2*/
+/*FINE 2*/
+
+/*CONTACT*/
+/*CONTACT*/
+
+/*AZZERAMENTI*/
+div.right div.last-item {
+	margin-right:0;
+}
+/*FINE AZZERAMENTI*/
