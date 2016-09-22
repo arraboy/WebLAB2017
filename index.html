@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Unirsm WebLAB 2017</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="css/unirsmweblab.css" type="text/css" rel="stylesheet">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+
+    </head>
+    <body>
+    
+<!--HEADER-->    
+    	<div id="header">
+            <nav class="single-page-nav">
+<!--LOGO-->    
+                <ul class="logo-home">
+                    <li><a class="external" href="index.html"><img src="images/logo.png"></a></li>
+                </ul>
+<!--MENU-->    
+                <ul class="menu">
+                    <li class="first"><a href="#home">Home</a></li>
+                    <li><a href="#uno">Uno</a></li>
+                    <li><a href="#due">Due</a></li>
+                    <li class="last"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="one-page">
+        
+<!--HOME-->
+            <div class="section" id="home" data-stellar-background-ratio="0.3">
+                <div class="image-over">
+                    <div class="parallax-content">
+                        <div class="left">
+                            <h1><span class="titolo-sezione titolo-home">Home</span></h1>
+                        </div>
+                        <div class="right">
+                            <div>
+                               <iframe src="prova_p5.html" width="400px" height="400px" frameborder="no" framespacing="0"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!--1-->
+
+            <div class="section" id="uno">
+                <div class="left">
+                    <h2>
+                        <span class="titolo-sezione">
+                            Sezione uno<br>
+                        </span>
+                    </h2>
+                    <h3>Eventuale sottotitolo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+<!--2-->            
+            
+            <div class="section" id="due">
+                <div style="display:table">
+                
+                    <div class="left">
+                        <h2>
+                            <span class="titolo-sezione">Sezione due</span><br>
+                            <br>
+                            Sottotitolo<br>
+                            a capo
+                        </h2>
+                    </div>
+                    
+                    <div class="right">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+<!--CONTACT-->            
+            
+            <div class="section" id="contact">
+                <div class="inner-section">
+                    <div class="left">
+                        <h2><span class="titolo-sezione">Contact</span></h2>
+                    </div>
+                    <div class="right padding-credits">
+                        <div>
+                            <p>Informazioni generali<br>
+                                —<br>
+                                <a href="mailto:prova@prova-e-mail.com" title="BTM" target="_blank">prova@prova-e-mail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="inner-section">
+                    <div class="left">
+                        <h2><span class="titolo-sezione">Crediti</span></h2>
+                    </div>
+                    <div class="right padding-credits">
+                        <div>
+                            <p>
+                                <b>UNIRSM | IUAV Corso di Laurea in Disegno Industriale</b><br>
+                                Laboratorio di Web e Multimedia Design a.a. 2016/2017 <br>
+                                <a href="http://www.unirsm.sm/" title="UNIRSM" target="_blank">www.unirsm.sm</a><br>
+                                <br>
+                                docente:<br>
+                                Cristina Chiappini<br>
+                                <br>
+                                tutor:<br>
+                                Gian Andrea Giacobone<br>
+                                <br>
+                                gruppo di progetto:<br>
+                                Nome Cognome<br> 
+                                Nome Cognome<br>
+                                <br>
+                                Sviluppato con jQuery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--COLLEGAMENTI AL ONE PAGE-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script>
+	// Prevent console.log from generating errors in IE for the purposes of the demo
+	if ( ! window.console ) console = { log: function(){} };
+
+	// The actual plugin
+	$('.single-page-nav').singlePageNav({
+		updateHash:true,
+		//offset: $('.single-page-nav').outerHeight(),
+		filter: ':not(.external)',
+		beforeStart: function() {
+			console.log('begin scrolling');
+		},
+		onComplete: function() {
+			console.log('done scrolling');
+		}
+	});
+</script>
+<!--FINE COLLEGAMENTI AL ONE PAGE-->
+
+<!--PARALLAX-->
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript">
+ 	jQuery(document).ready(function ($) {
+   $(window).stellar();
+  });
+</script>
+<!--FINE PARALLAX-->
+
+    </body>
+</html>
